@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="event in events">
+        {{ event }}
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        events: []
+      },
+      created() {
+        fetch('data.json')
+        .then(response => response.json())
+        .then(json => {
+          this.events
+        })
+        message: 'Hello Vue!'
+      }
+    })
+  </script>
+</body>
+</html>
