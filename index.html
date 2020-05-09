@@ -23,7 +23,7 @@
         fetch('https://tremendoagency.github.io/highlife-live/data.json')
         .then(response => response.json())
         .then(json => {
-          this.events
+          this.events = json.events
         })
       }
     })
