@@ -20,7 +20,7 @@
         events: []
       },
       created() {
-        fetch('data.json')
+        fetch('https://tremendoagency.github.io/highlife-live/data.json')
         .then(response => response.json())
         .then(json => {
           this.events
