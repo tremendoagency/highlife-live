@@ -8,7 +8,10 @@
   <div id="app">
     <ul>
       <li v-for="event in events">
-        {{ event }}
+        <div>{{ event.name }}</div>
+        <div>{{ event.description }}</div>
+        <div>{{ event.starts_on }}</div>
+        <div>{{ event.finishes_on }}</div>
       </li>
     </ul>
   </div>
